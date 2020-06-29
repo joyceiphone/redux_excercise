@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.main-page-container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // align-items: flex-start;
+  height: 100vh;
+  .match-area {
+    background-color: #cce6ff;
+    .match-text {
+      max-width: 400px;
+      margin: 0 auto;
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border-color: white;
+        border-width: thin;
+        outline: none;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .essay-area {
+    background-color: lightskyblue;
+    .essay-text {
+      max-width: 400px;
+      margin: 0 auto;
+      .essay-box {
+        height: 300px;
+        width: 100%;
+        background-color: white;
+      }
+    }
+  }
+}
+// .match-area {
+//   padding: 20px;
+// }
+
+.edit-page-container {
+  background-color: lightskyblue;
+  margin: auto;
+  margin-top: 0;
+  height: 100vh;
+  padding-top: 20px;
+  .edit-text-box {
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .edit-text {
+      max-width: 400px;
+      margin: 0 auto;
+      height: 300px;
+      background-color: white;
+    }
+  }
+}
